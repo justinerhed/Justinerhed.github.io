@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #FFFFFA;
+}
+
+@media all and (max-width: 360px ) {
+   .header {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+   }
+
+   .logo {
+    display: none;
+   }
+   
+   .divider a{
+    padding-left: 15px;
+   }    
+
+   .left {
+    display: none;
+   }
+
+   
+
+
+}
+
+
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #36454f;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    margin-top: 0px;
+    position: absolute;
+}
+
+.divider {
+    height: 40px;
+    width: 55%;
+    box-sizing: border-box;
+    font-size: 20px;
+    float: right;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.divider  a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider a:hover {
+    float: right;
+    height: 37px;
+    width: 107px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b1ddf1;
+    color: #000;
+    border-radius: 5px;
+}
+
+span {
+    color: red;
+    font-family: sans-serif, 'Courier New', Courier, monospace;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    height: 650px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.left h1 {
+    font-size: 45px;
+    font-family: "montserrat", sans-serif;
+    margin-top: 200px;
+}
+
+.left p {
+    height: 300px;
+    width: 500px;
+    font-size: 15px;
+    font-family: "poppins", sans-serif;
+    padding: 36px 37px;
+}
+
+.about {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    float: right;
+}
+
+.wrapper2 {
+    height: 1000px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.divider2 {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(200px, 150px);
+}
+
+.divider2 h2 {
+    font-size: 30px;
+    font-family: "Montserrat", 'Times New Roman', Times, serif;
+}
+
+.divider2 p {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.reveal {
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all .5s ease;
+  }
+  
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
